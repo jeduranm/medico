@@ -23,6 +23,9 @@ Homestead.json
 # contenedores
 /.vagrant
 
+#bitacoras
+logs/
+
 # -- Editores -----------------------------------------
 # vim
 .*.sw[a-z]
