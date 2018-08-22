@@ -23,3 +23,5 @@ Route::get('/bienvenido', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('boxs', 'BoxController');
