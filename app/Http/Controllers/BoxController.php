@@ -47,7 +47,8 @@ class BoxController extends Controller
      */
     public function show($id)
     {
-        //
+        $box = Box::find($id);
+        return view('boxs.show', compact('box'));
     }
 
     /**
