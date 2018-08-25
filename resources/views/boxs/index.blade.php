@@ -15,13 +15,13 @@
         <div class="col-lg-4">
         </div>
         <div class="col-lg-4">
-            
+            @include('boxs.fragment.aside')
         </div>
     </div>
     <div class="row">
         <div class=col-lg-12>
             <br>
-                
+                @include('boxs.fragment.info')
             <br>
 
                 <table class="table table-hover table-striped">
