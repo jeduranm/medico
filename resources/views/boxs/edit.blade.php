@@ -13,7 +13,7 @@
 
                  @include('boxs.fragment.error')
                 
-                 {!! Form::model($product, ['route' => ['boxs.update', $product->id], 'method' => 'POST', 'files' => true ]) !!}
+                 {!! Form::model($box, ['route' => ['boxs.update', $box->id], 'method' => 'POST', 'files' => true ]) !!}
                      @method('PUT')
                      @csrf
                      @include('boxs.fragment.form')

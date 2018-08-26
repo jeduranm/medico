@@ -10,7 +10,7 @@
 
 <div class="form-group">
     {!! Form::label('description', 'Descripción de la caja') !!}
-    {!! Form::text('short', null, ['class' => 'form-control']) !!}
+    {!! Form::text('description', null, ['class' => 'form-control']) !!}
 </div>
 
 <div class="form-group">
