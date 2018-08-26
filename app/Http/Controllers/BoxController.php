@@ -59,7 +59,8 @@ class BoxController extends Controller
      */
     public function edit($id)
     {
-        //
+        $product = Box::find($id);
+        return view('boxs.edit', compact('box'));
     }
 
     /**
