@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Box;
+use App\Http\Requests\BoxRequest;
+use Storage;
 
 class BoxController extends Controller
 {
@@ -34,9 +36,23 @@ class BoxController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(BoxRequest $request)
     {
-        //
+        $box = new Box;
+
+        $box->file          = $request->file;
+        $box->title         = $request->title;
+        $box->description   = $request->description;
+
+        $box->save();
+
+        //SAVE IMAGE
+        if($request->file('file')){
+            $path = Storage::disk('public')->put('image', $request->file('file'));
+            $box->fill(['file' => asset($path)])->save();
+        }
+
+        return redirect()->route('boxs.index')->with('info', 'La caja fue guardada');
     }
 
     /**
@@ -59,7 +75,7 @@ class BoxController extends Controller
      */
     public function edit($id)
     {
-        $product = Box::find($id);
+        $box = Box::find($id);
         return view('boxs.edit', compact('box'));
     }
 
@@ -70,9 +86,23 @@ class BoxController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(BoxRequest $request, $id)
     {
-        //
+        $box = Box::find($id);
+
+        //SAVE IMAGE
+        if($request->file('file')){
+            $path = Storage::disk('public')->put('image', $request->file('file'));
+            $box->fill(['file' => asset($path)])->save();
+        }
+
+        $box ->title        =   $request->title;
+        $box ->description  =   $request->description;
+
+        $box->save();
+
+
+        return redirect()->route('boxs.index')->with('info', 'La caja fue actualizada');
     }
 
     /**
