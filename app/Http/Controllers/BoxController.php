@@ -82,6 +82,9 @@ class BoxController extends Controller
      */
     public function destroy($id)
     {
-        //
+      $box = Box::find($id);
+      $box->delete();
+
+      return back()->with('info','La caja fue eliminada');
     }
 }
