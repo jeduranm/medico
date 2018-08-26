@@ -7,7 +7,7 @@
                 <img src="{{ $box->file }}" alt="">
                 <h2>
                     {{ $box->title }}
-                    <a href="" class="btn btn-primary float-right">Editar</a>
+                    <a href="{{ route('boxs.edit', $box->id) }}" class="btn btn-primary float-right">Editar</a>
                 </h2>
                 <p>
                     {{ $box->description }}
