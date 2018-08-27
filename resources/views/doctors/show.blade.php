@@ -6,11 +6,11 @@
             <div class=col-lg-8>
                 <img src="{{ $doctor->file }}" alt="">
                 <h2>
-                    {{ $doctor->title }}
+                    {{ $doctor->name }}
                     <a href="{{ route('doctors.edit', $doctor->id) }}" class="btn btn-primary float-right">Editar</a>
                 </h2>
                 <p>
-                    {{ $doctor->description }}
+                    {{ $doctor->position }}
                 </p>
             </div>
             <div class="col-sm-4">

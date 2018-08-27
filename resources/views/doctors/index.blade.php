@@ -28,8 +28,8 @@
                     <thead>
                         <th>ID</th>
                         <th>Foto</th>
-                        <th>Box</th>
-                        <th>Descripción Corta</th>
+                        <th>Doctor</th>
+                        <th>Especialidad</th>
                         <th colspan="3">Acciones</th>
                     </thead>
                     <tbody>
@@ -42,9 +42,9 @@
                                     @endif
                                 </td>
                                 <td>
-                                    <strong>{{ $doctor->title }}</strong>
+                                    <strong>{{ $doctor->name }}</strong>
                                 </td>
-                                <td>{{ $doctor->description }}</td>
+                                <td>{{ $doctor->position }}</td>
                                 <td>
                                     <a href="{{ route('doctors.show', $doctor->id) }}"  class="btn btn-link">Ver</a>
                                 </td>

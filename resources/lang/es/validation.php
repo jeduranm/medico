@@ -119,7 +119,9 @@ return [
 
     'attributes' => [
         'title'  => 'titulo',
-        'description'  => 'descripción'
+        'description'  => 'descripción',
+        'name'  => 'nombre',
+        'position'  => 'especialidad'
     ],
 
 ];

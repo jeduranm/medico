@@ -41,8 +41,8 @@ class DoctorController extends Controller
         $doctor = new Doctor;
 
         $doctor->file          = $request->file;
-        $doctor->title         = $request->title;
-        $doctor->description   = $request->description;
+        $doctor->name         = $request->name;
+        $doctor->position   = $request->position;
 
         $doctor->save();
 
@@ -96,8 +96,8 @@ class DoctorController extends Controller
             $doctor->fill(['file' => asset($path)])->save();
         }
 
-        $doctor ->title        =   $request->title;
-        $doctor ->description  =   $request->description;
+        $doctor ->name        =   $request->name;
+        $doctor ->position  =   $request->position;
 
         $doctor->save();
 
