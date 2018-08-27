@@ -27,3 +27,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('boxs', 'BoxController');
 
 Route::resource('services', 'ServiceController');
+
+Route::resource('doctors', 'DoctorController');
