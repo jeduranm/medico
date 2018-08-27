@@ -29,3 +29,5 @@ Route::resource('boxs', 'BoxController');
 Route::resource('services', 'ServiceController');
 
 Route::resource('medicos', 'MedicoController');
+
+Route::resource('facilities', 'FacilityController');
