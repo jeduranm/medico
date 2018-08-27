@@ -28,4 +28,4 @@ Route::resource('boxs', 'BoxController');
 
 Route::resource('services', 'ServiceController');
 
-Route::resource('doctors', 'DoctorController');
+Route::resource('medicos', 'MedicoController');
