@@ -28,6 +28,7 @@
                     <thead>
                         <th>ID</th>
                         <th>Foto</th>
+                        <th>Icono</th>
                         <th>Box</th>
                         <th>Descripción Corta</th>
                         <th colspan="3">Acciones</th>
@@ -41,6 +42,7 @@
                                         <img src="{{ $box->file }}" class="img-responsive" width="50" height="100">
                                     @endif
                                 </td>
+                                <td>{{ $box->icologo }}</td>
                                 <td>
                                     <strong>{{ $box->title }}</strong>
                                 </td>

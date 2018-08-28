@@ -41,6 +41,7 @@ class BoxController extends Controller
         $box = new Box;
 
         $box->file          = $request->file;
+        $box->icologo       = $request->icologo;
         $box->title         = $request->title;
         $box->description   = $request->description;
 
@@ -96,6 +97,7 @@ class BoxController extends Controller
             $box->fill(['file' => asset($path)])->save();
         }
 
+        $box ->icologo      =   $request->icologo;
         $box ->title        =   $request->title;
         $box ->description  =   $request->description;
 
