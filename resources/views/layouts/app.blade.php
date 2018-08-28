@@ -31,6 +31,7 @@
                 <a class="navbar-brand" href="{{ route('services.index') }}">Servicios</a>
                 <a class="navbar-brand" href="{{ route('medicos.index') }}">Doctores</a>
                 <a class="navbar-brand" href="{{ route('facilities.index') }}">Instalaciones</a>
+                <a class="navbar-brand" href="{{ route('partners.index') }}">Partners</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
