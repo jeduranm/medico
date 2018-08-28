@@ -41,6 +41,7 @@ class ServiceController extends Controller
         $service = new Service;
 
         $service->file          = $request->file;
+        $service->icologo       = $request->icologo;
         $service->title         = $request->title;
         $service->description   = $request->description;
 
@@ -96,6 +97,7 @@ class ServiceController extends Controller
             $service->fill(['file' => asset($path)])->save();
         }
 
+        $service ->icologo      =   $request->icologo;
         $service ->title        =   $request->title;
         $service ->description  =   $request->description;
 

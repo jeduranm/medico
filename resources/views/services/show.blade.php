@@ -5,6 +5,9 @@
         <div class="row"> 
             <div class=col-lg-8>
                 <img src="{{ $service->file }}" alt="">
+                <p>
+                    {{ $service->icologo }}
+                </p>
                 <h2>
                     {{ $service->title }}
                     <a href="{{ route('services.edit', $service->id) }}" class="btn btn-primary float-right">Editar</a>

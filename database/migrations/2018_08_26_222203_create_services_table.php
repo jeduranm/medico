@@ -16,7 +16,8 @@ class CreateServicesTable extends Migration
         Schema::create('services', function (Blueprint $table) {
             $table->increments('id');
 
-            $table->char('title', 32);
+            $table->char('icologo', 64);
+            $table->char('title', 64);
             $table->char('description', 255);
             $table->string('file')->nullable()->default('sin-imagen.jpg');
             

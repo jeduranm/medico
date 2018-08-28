@@ -28,7 +28,8 @@
                     <thead>
                         <th>ID</th>
                         <th>Foto</th>
-                        <th>Box</th>
+                        <th>Icono</th>
+                        <th>Servicio</th>
                         <th>Descripción Corta</th>
                         <th colspan="3">Acciones</th>
                     </thead>
@@ -41,6 +42,7 @@
                                         <img src="{{ $service->file }}" class="img-responsive" width="50" height="100">
                                     @endif
                                 </td>
+                                <td>{{ $service->icologo }}</td>
                                 <td>
                                     <strong>{{ $service->title }}</strong>
                                 </td>
