@@ -78,6 +78,7 @@
                 <li><a href="index-video.html">Home video</a></li>
               </ul>
             </li>
+            <li><a href="{{ url('/home') }}">Login</a></li>
           </ul>
         </div>
         <!-- /.navbar-collapse -->
