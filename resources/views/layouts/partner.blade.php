@@ -16,26 +16,23 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-sm-6 col-md-3">
-            <div class="partner">
-              <a href="#"><img src="img/dummy/partner-1.jpg" alt="" /></a>
+
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="wow bounceInUp" data-wow-delay="0.2s">
+              <div id="owl-partner" class="owl-carousel">
+
+                @foreach($partners as $partner)
+
+                  <div class="item"><a href="{{ $partner->file }}" title="{{ $partner->title }}" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg"><img src="{{ $partner->file }}" class="img-responsive" alt="img"></a></div>
+
+                @endforeach
+
+              </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="partner">
-              <a href="#"><img src="img/dummy/partner-2.jpg" alt="" /></a>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="partner">
-              <a href="#"><img src="img/dummy/partner-3.jpg" alt="" /></a>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="partner">
-              <a href="#"><img src="img/dummy/partner-4.jpg" alt="" /></a>
-            </div>
-          </div>
+
+
+
         </div>
       </div>
     </section>
