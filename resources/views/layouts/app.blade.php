@@ -25,7 +25,7 @@
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    Home
                 </a>
                 <a class="navbar-brand" href="{{ route('boxs.index') }}">Boxs</a>
                 <a class="navbar-brand" href="{{ route('services.index') }}">Servicios</a>
