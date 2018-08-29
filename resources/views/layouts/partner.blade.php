@@ -23,7 +23,7 @@
 
                 @foreach($partners as $partner)
 
-                  <div class="item"><a href="{{ $partner->file }}" title="{{ $partner->title }}" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg"><img src="{{ $partner->file }}" class="img-responsive" alt="img"></a></div>
+                  <div class="item"><a href="{{ $partner->file }}" title="{{ $partner->title }}" data-lightbox-gallery="gallery2" data-lightbox-hidpi="img/works/1@2x.jpg"><img src="{{ $partner->file }}" class="img-responsive" alt="img"></a></div>
 
                 @endforeach
 
