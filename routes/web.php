@@ -36,3 +36,5 @@ Route::resource('medicos', 'MedicoController');
 Route::resource('facilities', 'FacilityController');
 
 Route::resource('partners', 'PartnerController');
+
+Route::resource('menues', 'MenuController');
