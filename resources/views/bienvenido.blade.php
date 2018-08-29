@@ -1,6 +1,7 @@
 @extends('layouts.principal')
   @section('content')
    
+    @include('layouts.barranav')
     @include('layouts.intro')
     @include('layouts.boxes')
     @include('layouts.callaction')
