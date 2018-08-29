@@ -9,6 +9,15 @@ use Storage;
 
 class BoxController extends Controller
 {
+
+    /**
+     * Forza login de manera obligatoria
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
