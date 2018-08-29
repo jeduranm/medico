@@ -27,7 +27,7 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     Home
                 </a>
-                <a class="navbar-brand" href="{{ route('boxs.index') }}">Menu</a>
+                <a class="navbar-brand" href="{{ route('menues.index') }}">Menu</a>
                 <a class="navbar-brand" href="{{ route('boxs.index') }}">Boxs</a>
                 <a class="navbar-brand" href="{{ route('services.index') }}">Servicios</a>
                 <a class="navbar-brand" href="{{ route('medicos.index') }}">Doctores</a>
